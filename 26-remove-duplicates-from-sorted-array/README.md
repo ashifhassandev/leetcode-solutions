@@ -16,7 +16,7 @@ int[] expectedNums = [...]; // The expected answer with correct length <br>
 
 int k = removeDuplicates(nums); // Calls your implementation
 
-assert k == expectedNums.length;
+assert k == expectedNums.length; <br>
 for (int i = 0; i < k; i++) {
     assert nums[i] == expectedNums[i];
 }

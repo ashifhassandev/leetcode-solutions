@@ -1,3 +1,7 @@
+# 9. Palindrome Number
+
+<br>
+
 Given an integer x, return true if x is a palindrome, and false otherwise.
 
  <br>
@@ -7,6 +11,7 @@ Example 1:
 Input: x = 121
 Output: true
 Explanation: 121 reads as 121 from left to right and from right to left.
+
 Example 2:
 
 Input: x = -121

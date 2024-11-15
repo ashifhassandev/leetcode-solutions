@@ -13,6 +13,7 @@ const isPalindrome = (x) => {
     return x === reversedHalf || x === Math.floor(reversedHalf / 10);
 };
 
+
 // Method 2
 const checkPalindrome = (x) => {
     const reversed = x.toString().split('').reverse().join('');

@@ -1,4 +1,4 @@
-// Method 1
+// Method 1: Without converting integer to string
 const isPalindrome = (x) => {
     if (x < 0 || x % 10 === 0 && x !== 0) {
         return false;
@@ -14,7 +14,7 @@ const isPalindrome = (x) => {
 };
 
 
-// Method 2
+// Method 2: With converting integer to string
 const checkPalindrome = (x) => {
     const reversed = x.toString().split('').reverse().join('');
     return x.toString() === reversed;

@@ -6,8 +6,8 @@ A word is a maximal substring consisting of non-space characters only.
 
 Example 1:
 
-Input: s = "Hello World"
-Output: 5
+Input: s = "Hello World"<br>
+Output: 5<br>
 Explanation: The last word is "World" with length 5.
 
 Example 2:

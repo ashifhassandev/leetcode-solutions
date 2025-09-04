@@ -11,6 +11,7 @@ const uniqueOccurrences = (arr) => {
   return new Set(values).size === values.length;
 };
 
+
 // Method 2:
 const findUniqueOccurrences = (arr) => {
   const freqMap = new Map();

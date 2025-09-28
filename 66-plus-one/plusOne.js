@@ -1,7 +1,6 @@
 // Method 1:
 const plusOne = (digits) => {
-  const str = digits.join("");
-  const num = BigInt(str) + 1n;
+  const num = BigInt(digits.join("")) + 1n;
   return num
     .toString()
     .split("")

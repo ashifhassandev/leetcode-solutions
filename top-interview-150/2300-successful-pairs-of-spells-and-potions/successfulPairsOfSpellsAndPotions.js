@@ -20,6 +20,25 @@ const getSuccessfulPairs = (spells, potions, success) => {
 
 
 // Method 2:
+const findSuccessfulPairs = (spells, potions, success) => {
+  const pairs = [];
+  const sorted = [...potions].sort((a, b) => a - b);
+
+  for (const spell of spells) {
+    let i = 0;
+
+    while (i < sorted.length && spell * sorted[i] < success) {
+      i++;
+    }
+
+    pairs.push(sorted.length - i);
+  }
+
+  return pairs;
+};
+
+
+// Method 3:
 const successfulPairs = (spells, potions, success) => {
   const pairs = [];
   const sorted = [...potions].sort((a, b) => a - b);

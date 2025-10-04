@@ -1,4 +1,4 @@
-// Method 1:
+// Method 1 (Less efficient):
 const rotate = (nums, k) => {
   k = k % nums.length;
   let count = 0;

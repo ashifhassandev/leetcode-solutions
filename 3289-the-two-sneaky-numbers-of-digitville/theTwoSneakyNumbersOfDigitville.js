@@ -29,7 +29,7 @@ const getSneakyNumbers = (nums) => {
       duplicates.push(num);
     }
 
-    if (duplicates.length >= 2) return duplicates;
+    if (duplicates.length === 2) return duplicates;
   }
 
   return duplicates;

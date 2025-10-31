@@ -38,11 +38,11 @@ const getSneakyNumbers = (nums) => {
 
 // Method 3:
 const getSneakyNumbers = (nums) => {
-  const set = new Set();
+  const seen = new Set();
   const duplicates = [];
 
   for (const num of nums) {
-    !set.has(num) ? set.add(num) : duplicates.push(num);
+    !seen.has(num) ? seen.add(num) : duplicates.push(num);
     if (duplicates.length === 2) return duplicates;
   }
 

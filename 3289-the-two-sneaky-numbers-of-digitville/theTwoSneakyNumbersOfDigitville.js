@@ -1,11 +1,11 @@
 // Method 1:
 function getSneakyNumbers(nums) {
-  const freq = {};
+  const seen = {};
   const duplicates = [];
 
   for (const num of nums) {
-    if (!freq[num]) {
-      freq[num] = true;
+    if (!seen[num]) {
+      seen[num] = true;
     } else {
       duplicates.push(num);
     }
@@ -19,12 +19,12 @@ function getSneakyNumbers(nums) {
 
 // Method 2:
 const getSneakyNumbers = (nums) => {
-  const freqMap = new Map();
+  const seen = new Map();
   const duplicates = [];
 
   for (const num of nums) {
-    if (!freqMap.has(num)) {
-      freqMap.set(num, true);
+    if (!seen.has(num)) {
+      seen.set(num, true);
     } else {
       duplicates.push(num);
     }

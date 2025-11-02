@@ -11,3 +11,16 @@ const shuffle = (nums, n) => {
 
   return shuffled;
 };
+
+
+// Method 2:
+const shuffleArray = (nums, n) => {
+  const shuffled = [];
+
+  for (let i = 0; i < n; i++) {
+    shuffled.push(nums[i]);
+    shuffled.push(nums[i + n]);
+  }
+
+  return shuffled;
+};
